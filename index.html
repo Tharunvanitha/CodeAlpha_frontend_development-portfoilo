@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hashim | Portfolio</title>
+<meta name="description" content="Portfolio of Hashim: projects, skills, resume and contact.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="brand" href="#home">Hashim</a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <p class="hello">Hi, I'm</p>
+    <h1>Hashim</h1>
+    <p class="lead">I build small, useful web tools and present ideas clearly.</p>
+    <div class="cta">
+      <a class="btn solid" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About</h2>
+    <p>I'm a student developer who likes turning everyday problems into working software. My recent work includes a
+      club-management project for student organizations, and I regularly prepare seminar presentations, including
+      one on setting up a room for design thinking.</p>
+    <!-- TODO: add your college, degree and year here -->
+    <p>Right now I'm strengthening my frontend skills with HTML, CSS and JavaScript through the CodeAlpha internship.</p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>HTML5</li><li>CSS3 &amp; Responsive Design</li><li>JavaScript</li>
+      <li>Git &amp; GitHub</li><li>Presentations</li><li>Design Thinking</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Club Hub</h3>
+        <p>A working model that tackles inefficient student organization administration and club management,
+          with a full project report and presentation.</p>
+        <a href="#" aria-label="Club Hub details">Details</a>
+      </article>
+      <article class="card">
+        <h3>Image Gallery</h3>
+        <p>Responsive gallery with category filters, hover effects and a lightbox with keyboard and swipe navigation.</p>
+        <a href="../CodeAlpha_ImageGallery/index.html">Open project</a>
+      </article>
+      <article class="card">
+        <h3>Calculator</h3>
+        <p>Calculator with live result preview, full keyboard support and safe handling of divide-by-zero.</p>
+        <a href="../CodeAlpha_Calculator/index.html">Open project</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume" class="reveal">
+    <h2>Resume</h2>
+    <ul class="timeline">
+      <!-- TODO: replace the placeholders with your real details -->
+      <li><b>Frontend Development Intern</b><span>CodeAlpha</span></li>
+      <li><b>[Degree / Course]</b><span>[Your college], [Years]</span></li>
+    </ul>
+    <a class="btn solid" href="resume.pdf" download>Download resume (PDF)</a>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <form id="form">
+      <label>Name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" rows="4" required></textarea></label>
+      <button class="btn solid" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+    <p class="links">
+      <a href="mailto:you@example.com">you@example.com</a>
+      <a href="https://github.com/your-username">GitHub</a>
+      <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+    </p>
+  </section>
+</main>
+<footer>&copy; <span id="year"></span> Hashim</footer>
+<script src="script.js"></script>
+</body>
+</html>
